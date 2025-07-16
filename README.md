@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="src/Sources/logo.png" width="120" style="image-rendering: pixelated;">
-<h1 align="center">Serein</h1>
+<h1 align="center">基于Serein的排行榜插件</h1>
 <p align="center">
   极简但多功能的服务器面板软件
 </p>
