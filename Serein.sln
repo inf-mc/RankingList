@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serein.Plugins.Demo", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serein.ConnectionProtocols", "src\Serein.ConnectionProtocols\Serein.ConnectionProtocols.csproj", "{90B05C4F-696D-407A-8BE5-99FF0C0856EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlugin", "src\MyPlugin\MyPlugin\MyPlugin.csproj", "{F8231796-9D95-4956-9417-D37A062DED12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,8 +113,23 @@ Global
 		{90B05C4F-696D-407A-8BE5-99FF0C0856EF}.Release|x64.Build.0 = Release|Any CPU
 		{90B05C4F-696D-407A-8BE5-99FF0C0856EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{90B05C4F-696D-407A-8BE5-99FF0C0856EF}.Release|x86.Build.0 = Release|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Debug|x64.Build.0 = Debug|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Debug|x86.Build.0 = Debug|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Release|x64.ActiveCfg = Release|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Release|x64.Build.0 = Release|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Release|x86.ActiveCfg = Release|Any CPU
+		{F8231796-9D95-4956-9417-D37A062DED12}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41A4D296-9BB8-450E-AA3B-D2707626215F}
 	EndGlobalSection
 EndGlobal
