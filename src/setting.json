@@ -1,0 +1,80 @@
+﻿{
+  "RankCommands": [
+    {
+      "Keyword": "时长排行",
+      "KeywordAll": "全部时长排行",
+      "Type": "time",
+      "Title": "🎮 游戏时长排行榜",
+      "Format": "{index}. {name} - {value} 秒钟",
+      "SortOrder": "desc",
+      "TopN": 3,
+      "说明": "修改单位需同步修改下方StatsMapping-time-Transform"
+
+    },
+    {
+      "Keyword": "移动距离排行",
+      "KeywordAll": "全部移动距离排行",
+      "Type": "walk",
+      "Title": "⛏️ 移动距离排行榜",
+      "SortOrder": "desc",
+      "TopN": 5,
+      "Format": "{index}. {name} - 共计移动 {value} 个距离"
+    },
+    {
+      "Keyword": "挖掘排行",
+      "KeywordAll": "全部挖掘排行",
+      "Type": "mined",
+      "Title": "⛏️ 挖掘排行榜",
+      "SortOrder": "desc",
+      "TopN": 5,
+      "Format": "{index}. {name} - 共计挖掘 {value} 千个方块"
+    },
+    {
+      "Keyword": "放置排行",
+      "KeywordAll": "全部放置排行",
+      "Type": "placed",
+      "Title": "🧱 放置排行榜",
+      "SortOrder": "desc",
+      "TopN": 5,
+      "Format": "{index}. {name} - 共计放置 {value} 个方块"
+    }
+  ],
+
+  "StatsMapping": {
+    "time": {
+      "Path": [ "stats", "minecraft:custom", "minecraft:play_time" ],
+      "Transform": "ss",
+      "说明": "时长默认是tick，ss为秒，mm为分钟，hh为小时，dd为天，暂不支持其他类型"
+
+    },
+    "walk": {
+      "Path": [ "stats", "minecraft:custom", "minecraft:walk_one_cm" ]
+    },
+    "mined": {
+      "Path": [ "stats", "minecraft:mined" ],
+      "Transform": "k",
+      "说明": "k为千，w为万，m为百万，暂不支持其他类型，ss/mm/hh/dd也能用，换算率分别为20,1200,72000,1728000"
+    },
+    "placed": {
+      "Path": [ "stats", "minecraft:picked_up" ]
+    }
+  },
+
+  "FilePaths": {
+    "UserCache": "mc/usercache.json",
+    "StatsDirectory": "mc/world/stats",
+    "说明": "路径为相对主程序的路径，测试环境目录结构如下                  ",
+    "说明0": "Serein.Plus_win-x64/                                         ",
+    "说明1": "Serein.Plus.exe                                              ",
+    "说明2": "├── plugins/                                              ",
+    "说明3": "│   └── RankingList/           ←插件                    ",
+    "说明4": "│       ├── MainPlugin.dll                               ",
+    "说明5": "│       ├── setting.json       ←配置文件                ",
+    "说明6": "└── mc/                         ←我的世界服务器目录      ",
+    "说明7": "    ├── usercache.json          ←name和uuid对应文件      ",
+    "说明8": "    ├── whitelist.json          ←name和uuid对应文件      ",
+    "说明9": "    └── world/                  ←存档位置                ",
+    "说明a": "      └── stats/                ←统计数据路径            ",
+    "说明b": "usercache可以使用whitelist，json格式中包含name/uuid字段即可  "
+  }
+}

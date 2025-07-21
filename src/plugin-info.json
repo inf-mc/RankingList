@@ -1,0 +1,34 @@
+{
+  "id": "RankingList",
+  "name": "排行榜",
+  "type": "net",
+  "version": "1.0.0.1",
+
+  "entryFile": "MyPlugin.dll",
+  "authors": [
+    {
+      "name": "简易排行榜",
+      "description": "setting.json中修改配置"
+    }
+  ],
+  "description": "net",
+  "tags": [
+    "entertainment",
+    "development",
+    "tool",
+    "information",
+    "management",
+    "api"
+  ],
+  "targetingSerein": [
+    "2.0"
+  ],
+  "dependencies": [
+    {
+      "id": "dependency-1",
+      "versions": [
+        "1.0.0.1"
+      ]
+    }
+  ]
+}
