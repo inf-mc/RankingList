@@ -1,0 +1,75 @@
+# Visual Studio 2022
+.vs/
+*.sln.ide/
+
+# Visual Studio 2019
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# Binaries for Debug and Release builds
+[Bb]in/
+[Oo]bj/
+
+# Rider IDE
+.idea/
+
+# NuGet packages and caches
+packages/                 # Older .NET projects might use this
+*.nupkg                   # NuGet package files
+.nuget/                   # NuGet specific files
+nuget.exe                 # NuGet executable
+!*.nuget.config           # But keep nuget.config
+*.suo                     # Solution User Options file
+
+# Project files
+*.csproj.user             # User-specific project settings
+*.user                    # General user files (e.g., in solution folder)
+*.log                     # Log files
+*.pdb                     # Program Database files (debugging symbols)
+*.dll                     # Compiled assemblies
+*.exe                     # Executables
+*.config                  # Config files (e.g., App.config, Web.config) - consider ignoring if they contain sensitive data or are generated
+!App.config               # Often App.config is part of the project
+!Web.config               # Often Web.config is part of the project
+
+# Test results
+TestResults/
+*.trx                     # Visual Studio Test Results file
+
+# Resharper
+*.resharper               # ReSharper configuration files
+_ReSharper.*/             # ReSharper cache directories
+
+# NCrunch
+.ncrunch/
+
+# SonarSource
+.sonar/
+
+# StyleCop (if used)
+StyleCop.Cache
+
+# Data Protection / User Secrets
+# These should generally be outside of source control, but if accidentally committed, ignore them.
+*.usersecrets
+*.pubxml                  # Publish profiles often contain sensitive data
+*.pubxml.user
+
+# Git history (if you're rebasing/squashing a lot)
+.git/index.lock           # Git index lock file
+
+# Package Manager tools (e.g., Node.js in web projects)
+node_modules/
+npm-debug.log*
+
+# Mac & Linux files (if developing on these OSs)
+.DS_Store
+.Trash
+Thumbs.db                 # Windows thumbnail cache
+
+# Custom exclusions (add your project-specific ignores here)
+# For example:
+# my_specific_generated_files/
+# sensitive_credentials.txt
